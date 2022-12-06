@@ -9,17 +9,35 @@ body {
 
 header {
     font-family: 'Zilla Slab', 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+#highScore:hover {
+    cursor: pointer;    
+    color: blueviolet;
+}
+
+.highScoresList{
+    text-align: center;
+    display: flex;
+    text-decoration: none;
 }
 
 main {
     text-align: center;
-    padding: 10% 20%;
+    padding: 5%;
     font-family: 'Zilla Slab', 'Courier New', Courier, monospace;
 }
 
 main h1 {
     font-size: 1.9em;
-    padding: 4%;
+    padding: 1%;
+    font-weight: bold;  
 }
 
 main p {
@@ -28,17 +46,52 @@ main p {
 
 }
 
+.leaderboard {
+    
+    background-color: bisque;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin: 5px;
+}
+
+
 #multipleChoice {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+
 .currentOptions {
     margin: 2%;
     padding: 3%;
     border: 3px black solid;
-    border-radius: 20%;
+    border-radius: 30%;
     background-color: bisque;
-    
+    font-size: 20px;
+    font-style: italic;
 }
+
+.submitBtn {
+    height: 50px;
+    width: 150px;
+    margin-top: 3%;
+    margin-left: 35%;
+    border-radius: 50%;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.currentOptions:hover {
+    cursor: pointer;
+    background-color: darkred;
+    color: white;
+}
+
